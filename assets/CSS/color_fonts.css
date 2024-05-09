@@ -1,0 +1,14 @@
+:root{
+    --primary: #fc393e;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+
+
