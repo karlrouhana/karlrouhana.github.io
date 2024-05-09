@@ -387,9 +387,12 @@ Media
   }
 
   .home{
-    margin-left: 0;
+    margin-left: 0px;
     margin-top: 220px;
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home-text{
     font-size: 1.5rem;
