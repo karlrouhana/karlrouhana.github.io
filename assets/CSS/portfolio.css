@@ -259,7 +259,7 @@ Skills & Tools
   margin: 0;
 }
 .project-img-box{
-  -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 231, 255, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 229, 255, 0.5));
 	-webkit-transition: all 0.5s linear;
 	-o-transition: all 0.5s linear;
 	transition: all 0.5s linear;
@@ -438,7 +438,24 @@ Media
   .summary{
     font-size: 24px;
   }
+  .project-container>div{
+    margin-bottom: 5px !important;
+  }
   .project-desc{
     font-size: 16px
+  }
+
+  .project-img-box img{
+    height: 150px;
+  }
+  .project-links div{
+    flex-wrap: wrap;
+    gap: 15px !important;
+  }
+  .project-links div a{
+    font-size: 24px;
+  }
+  .view-more-link{
+    font-size: 30px;
   }
 }
