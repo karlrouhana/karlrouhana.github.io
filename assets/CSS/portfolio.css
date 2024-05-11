@@ -192,7 +192,6 @@ section{
 .about-title{
   font-size: 26px;
   font-weight: 900;
-  filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 1));
 }
 .about-title p{
   padding: 0;
@@ -220,7 +219,7 @@ Skills & Tools
   width: 100%;
   text-align: center;
   padding: 30px;
-  box-shadow: 0px 0px 20px rgba(0, 231, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 .skills-grp .row{
   margin-top: 30px;
@@ -229,7 +228,6 @@ Skills & Tools
 }
 .skills-grp i{
   font-size: 60px;
-  filter: drop-shadow(0px 0px 20px rgba(0, 231, 255, 0.8));
 }
 .skills-grp .col:hover{
   transition: all .2s ease-in-out;
@@ -261,13 +259,13 @@ Skills & Tools
   margin: 0;
 }
 .project-img-box{
-  filter: drop-shadow(0px 0px 20px rgba(0, 231, 255, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 231, 255, 0.5));
 	-webkit-transition: all 0.5s linear;
 	-o-transition: all 0.5s linear;
 	transition: all 0.5s linear;
 }
 .project-img-box:hover{
-  filter: drop-shadow(0px 0px 10px rgba(0, 231, 255, 0.3));
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 231, 255, 0.3));
 }
 .project-img-box img{
   width: 100%;
