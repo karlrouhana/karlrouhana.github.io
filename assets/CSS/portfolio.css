@@ -418,9 +418,6 @@ Media
   .skills-grp{
     padding: 11px;
   }
-}
-
-@media (max-width: 1199px){ 
   .project-summary{
     margin-top: 25px;
     padding-left: 15px;
