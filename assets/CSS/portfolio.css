@@ -269,6 +269,11 @@ Skills & Tools
 .arrows-container{
   margin-top: 20px;
 }
+#counter{
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
 .left-arrow, .right-arrow{
   background-color: transparent;
   border: none;
@@ -347,6 +352,7 @@ Skills & Tools
 }
 .view-more{
   margin-left: 95px;
+  width: 200px;
 }
 .view-more-link{
   text-decoration: none;
@@ -355,7 +361,9 @@ Skills & Tools
   font-weight: 900;
   width: auto;
 }
-
+.view-more-link a{
+  width: auto;
+}
 .view-more-link::after{
   content: '';
   display: block;
@@ -506,15 +514,16 @@ Media
     font-size: 24px;
   }
   .view-more{
-    margin: 0;
-    display: flex ;
-    justify-content: center ; 
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 170px;
   }
 
   .view-more-link{
     font-size: 25px;
     padding: 0 !important;
   }
+
   .project-summary{
     display: none;
   }
@@ -537,7 +546,8 @@ Media
 
   .active, .collapsible:hover {
     border-radius: 5px;
-    box-shadow: 0 0 5px #ff0000;
+    background-color: white;
+    color: black;
     cursor: pointer;
   }
   .nav-menu .active{
@@ -550,5 +560,6 @@ Media
     display: none;
     overflow: hidden;
     background-color: transparent;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.108);
   }
 }

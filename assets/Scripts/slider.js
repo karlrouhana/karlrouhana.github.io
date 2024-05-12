@@ -1,8 +1,12 @@
 "use strict";
 const leftArrow = document.querySelector(".left-arrow"),
   rightArrow = document.querySelector(".right-arrow"),
-  slider = document.querySelector(".slider");
+  slider = document.querySelector(".slider"),
+  slideCounter = document.getElementById("counter");
 
+  var counter = 1;
+  slideCounter.innerHTML = counter;
+  
 /**
  * @brief Scroll to the right
  */
@@ -12,11 +16,15 @@ function scrollRight() {
       left: 0,
       behavior: "smooth"
     });
+    counter = 1;
+    slideCounter.innerHTML = counter;
   } else {
     slider.scrollBy({
       left: window.innerWidth,
       behavior: "smooth"
     });
+    counter++;
+    slideCounter.innerHTML = counter;
   }
 }
 
@@ -28,6 +36,8 @@ function scrollLeft() {
     left: -window.innerWidth,
     behavior: "smooth"
   });
+  counter-- != 1 ? counter : counter = 1;
+  slideCounter.innerHTML = counter;
 }
 
 
@@ -37,4 +47,3 @@ leftArrow.addEventListener("click", function (ev) {
     scrollLeft();
   }
 });
-
