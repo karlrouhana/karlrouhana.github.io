@@ -252,7 +252,7 @@ Skills & Tools
   max-height: 100dvh;
   max-width: 100dvw;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
 }
