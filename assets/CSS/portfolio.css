@@ -81,6 +81,7 @@ section{
   transition: 0.3s;
   font-size: 16px;
   font-weight: 900;
+  padding: 5px 10px;
 }
 
 .nav-menu a:hover{
@@ -244,6 +245,9 @@ Skills & Tools
 #projects{
   padding: 0;
 }
+.collapsible-small-device{
+  display: none;
+}
 .slider {
   max-height: 100dvh;
   max-width: 100dvw;
@@ -341,7 +345,9 @@ Skills & Tools
   width: 100%;
   transition: width .5s;
 }
-
+.view-more{
+  margin-left: 95px;
+}
 .view-more-link{
   text-decoration: none;
   color: white;
@@ -467,10 +473,6 @@ Media
   .home-text{
     font-size: 1.5rem;
   }
-  .slider{
-    max-height: none;
-    min-height: 100dvh;
-  }
   .slider__slide{
     padding: 0;
   }
@@ -503,7 +505,50 @@ Media
   .project-links div a{
     font-size: 24px;
   }
+  .view-more{
+    margin: 0;
+    display: flex ;
+    justify-content: center ; 
+  }
+
   .view-more-link{
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0 !important;
+  }
+  .project-summary{
+    display: none;
+  }
+  .collapsible-small-device{
+    display: block;
+    margin-top: 20px;
+  }
+  .collapsible {
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  }
+
+  .active, .collapsible:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff0000;
+    cursor: pointer;
+  }
+  .nav-menu .active{
+    color: #6f7180;
+    box-shadow: none;
+  }
+
+  .content {
+    padding: 10px 5px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
   }
 }
