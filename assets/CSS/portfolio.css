@@ -241,10 +241,46 @@ Skills & Tools
 /*--------------------------------------------------------------
 # Project
 --------------------------------------------------------------*/
-
-.slider{
-  scroll-snap-type: mandatory x;
+#projects{
+  padding: 0;
 }
+.slider {
+  max-height: 100dvh;
+  max-width: 100dvw;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.slider__slide {
+  min-width: 100dvw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  padding: 0 80px;
+}
+.arrows-container{
+  margin-top: 20px;
+}
+.left-arrow, .right-arrow{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 50px;
+}
+
+/* Hide the scrollbar */
+.slider::-webkit-scrollbar {
+  display: none; /* Safari, Google Chrome, Opera,  */
+}
+.slider {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .project-name{
   font-size: 32px;
   font-weight: 900;
@@ -396,9 +432,6 @@ Media
     justify-content: center;
     align-items: center;
   }
-  .home-text{
-    font-size: 1.5rem;
-  }
   .home-text-containter{
     line-height: 30px;
     margin-bottom: 20px !important;
@@ -431,6 +464,19 @@ Media
 }
 
 @media (max-width: 767px){ 
+  .home-text{
+    font-size: 1.5rem;
+  }
+  .slider{
+    max-height: none;
+    min-height: 100dvh;
+  }
+  .slider__slide{
+    padding: 0;
+  }
+  #projects{
+    padding: 0;
+  }
   .project-name{
     font-size: 26px;
   }
