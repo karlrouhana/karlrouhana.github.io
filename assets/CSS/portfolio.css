@@ -206,7 +206,7 @@ section{
 
 .about-desc{
   margin-top: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -267,7 +267,7 @@ Skills & Tools
   padding: 0 80px;
 }
 .arrows-container{
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #counter{
   color: white;
@@ -279,6 +279,9 @@ Skills & Tools
   border: none;
   color: white;
   font-size: 50px;
+}
+.left-arrow:hover, .right-arrow:hover{
+  filter: brightness(75%);
 }
 
 /* Hide the scrollbar */
@@ -504,7 +507,7 @@ Media
   }
 
   .project-img-box img{
-    height: 150px;
+    height: 180px;
   }
   .project-links div{
     flex-wrap: wrap;
@@ -518,6 +521,10 @@ Media
     margin-top: 20px;
     width: 170px;
   }
+  .arrows-container{
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 
   .view-more-link{
     font-size: 25px;
@@ -530,6 +537,17 @@ Media
   .collapsible-small-device{
     display: block;
     margin-top: 20px;
+  }
+  #counter{
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .left-arrow, .right-arrow{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
   }
   .collapsible {
     background-color: transparent;
@@ -545,14 +563,16 @@ Media
   }
 
   .active, .collapsible:hover {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     color: black;
     cursor: pointer;
+    transition: all .5s ease;
   }
   .nav-menu .active{
     color: #6f7180;
     box-shadow: none;
+    background-color: transparent;
   }
 
   .content {

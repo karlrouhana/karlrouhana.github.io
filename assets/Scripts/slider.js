@@ -8,22 +8,10 @@ const leftArrow = document.querySelector(".left-arrow"),
   var counter = 1;
   slideCounter.innerHTML = counter;
 
-
-let timerId = setInterval(scrollRight, 5000);
-
-/**
- * @brief Reset timer for scrolling right
- */
-function resetTimer() {
-  clearInterval(timerId);
-  timerId = setInterval(scrollRight, 5000);
-}
-  
 /**
  * @brief Scroll to the right
  */
 function scrollRight() {
-  resetTimer();
   if (slider.scrollWidth - slider.clientWidth === slider.scrollLeft) {
     slider.scrollTo({
       left: 0,
@@ -55,13 +43,5 @@ function scrollLeft() {
   slideCounter.innerHTML = counter;
 }
 
-
-// Scroll Events
-leftArrow.addEventListener("click", function (ev) {
-  if (ev.target === leftArrow) {
-    scrollLeft();
-    resetTimer();
-  }
-});
 
 
