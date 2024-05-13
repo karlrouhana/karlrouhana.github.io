@@ -2,6 +2,7 @@
 const leftArrow = document.querySelector(".left-arrow"),
   rightArrow = document.querySelector(".right-arrow"),
   slider = document.querySelector(".slider"),
+  slides = document.querySelectorAll(".slider__slide"),
   slideCounter = document.getElementById("counter");
 
   var counter = 1;
@@ -35,7 +36,9 @@ function scrollRight() {
       left: window.innerWidth,
       behavior: "smooth"
     });
-    counter++;
+    if(counter < slides.length){
+      counter++;
+    }
     slideCounter.innerHTML = counter;
   }
 }
