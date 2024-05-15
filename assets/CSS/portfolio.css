@@ -61,11 +61,12 @@ section {
 #header .profile .profile-text {
   font-size: 18px;
   text-decoration: none;
-  color: var(--color1);
+  color: var(--color3);
   margin: 0;
   padding: 0;
   font-weight: 900;
   text-align: center;
+  text-shadow: 0px 0px 20px var(--color3);
 }
 
 #header .profile .social-links {
