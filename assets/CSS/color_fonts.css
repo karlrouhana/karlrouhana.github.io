@@ -1,13 +1,11 @@
 :root{
-    --primary: #fc393e;
-}
-
-.bg-primary{
-    background-color: var(--primary) !important;
+    --color1: white;
+    --color2: black;
+    --color3: #FF5F5F;
 }
 
 .text-primary{
-    color: var(--primary) !important;
+    color: var(--color3) !important;
 }
 
 
