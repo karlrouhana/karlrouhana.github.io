@@ -287,6 +287,7 @@ section {
   border: none;
   color: var(--color3);
   font-size: 50px;
+  text-shadow: 0px 0px 15px var(--color3);
 }
 
 .left-arrow:hover,
@@ -404,7 +405,48 @@ section {
   transition: width .5s;
 }
 
-
+/* Contact Section */
+/* Override Bootstrap styles */
+.form-group{
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 900; /* Bold labels */
+  color: var(--color3); /* Label text color */
+}
+.form-group input{
+  padding: 15px;
+}
+.form-control {
+  background-color: var(--color2); /* Background color for inputs */
+  border: 2px solid var(--color3); /* Input border */
+  box-shadow: 0px 0px 20px var(--color3); /* Glow effect */
+  color: var(--color1);
+}
+.form-control:focus{
+  background-color: var(--color2);
+  border-color: var(--color3);
+  box-shadow: 0px 0px 20px var(--color3); /* Glow effect */
+  color: var(--color1);
+}
+.form-control:focus::placeholder{
+  color: var(--color2);
+}
+.form-control::placeholder{
+  color: var(--color3);
+}
+.submit-btn {
+  background-color: var(--color3); /* Primary button background color */
+  border: 2px solid var(--color3); /* Primary button border color */
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px var(--color3);
+  transition: box-shadow .5s ease;
+}
+.submit-btn:hover {
+  box-shadow: 0px 0px 15px var(--color3); /* Glow effect */
+}
 
 /* Media Queries */
 @media (max-width: 1199px) {
@@ -480,6 +522,9 @@ section {
     justify-content: center;
     align-items: center;
   }
+  .home > div > div{
+    margin-bottom: 10px !important;
+  }
 
   .home-text-containter {
     line-height: 30px;
@@ -546,7 +591,9 @@ section {
   .project-container>div {
     margin-bottom: 5px !important;
   }
-
+  .projects-slide > div > div{
+    margin-bottom: 10px !important;
+  }
   .project-desc {
     font-size: 16px;
   }

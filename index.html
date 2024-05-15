@@ -49,8 +49,8 @@
     </header>
     <div class="home d-flex">
       <div class="d-block">
-        <div class="mb-3 h6">
-          <span class="text-bold">I am</span> <span>Karl Rouhana</span>
+        <div class="mb-3 h5">
+          <span>I am</span> <span class="text-primary text-bold">Karl Rouhana</span>
         </div>
         <div class="home-text-containter mb-2">
           <span class="home-text"><span class="text-bold text-primary">Software</span><span> Developer</span></span><br>
@@ -389,15 +389,41 @@
         <a href="" class="view-more-link ">View More <i class="bx bx-up-arrow-alt" style="rotate: 45deg;"></i></a>
       </div>
   </section>
-  <section id="contact-form">
+  <section id="contact">
     <div class="container-fluid">
       <div class="row p-5 mb-3">
         <p class="section-title text-center">Contact</p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+              </div>
+              <div class="mt-5 btn-container d-flex justify-content-center">
+                <button type="submit" class="submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Template Main JS File -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="assets/Scripts/main.js"></script>
   <script src="assets/Scripts/slider.js"></script>
   <script src="assets/Scripts/collapse-menu.js"></script>
