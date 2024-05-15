@@ -120,4 +120,9 @@
     }
   });
 
+  document.addEventListener("DOMContentLoaded", function() {
+    // Scroll to the home section when the page loads
+    const homeSection = document.getElementById("header");
+    homeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 })()
