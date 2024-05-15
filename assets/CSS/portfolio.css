@@ -637,4 +637,14 @@ section {
     background-color: transparent;
     border-bottom: .5px solid rgba(255, 255, 255, 0.108);
   }
+
+  .project-links a{
+    color: var(--color1);
+  }
+  .project-links a::after{
+    background-color: var(--color1);
+  }
+  .project-links a:hover::after{
+    background-color: var(--color1);
+  }
 }
