@@ -14,9 +14,6 @@ const totalSlides = slides.length;
 let counter = 1;
 slideCounter.innerHTML = counter;
 
-// Set initial scroll position to the first slide
-slides[0].scrollIntoView({ behavior: "auto", block: "start" });
-
 // Adding event listeners to arrow buttons
 leftArrow.addEventListener("click", scrollLeft);
 rightArrow.addEventListener("click", scrollRight);
