@@ -39,7 +39,7 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
     }
 
     if (valid) {
-        window.location.href = "assets/PHP/process_form.php";
+        window.location.href = "process_form.php";
     } else {
         event.preventDefault();
     }

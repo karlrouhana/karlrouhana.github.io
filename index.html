@@ -397,18 +397,18 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form id="contactForm" action="assets/PHP/process_form.php" method="post">
+            <form id="contactForm" action="process_form.php" method="post">
               <div class="form-group">
                 <div class="d-flex justify-content-between"><label for="name">Name</label><span id="name_error" class="error"></span></div>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
               </div>
               <div class="form-group">
                 <div class="d-flex justify-content-between"><label for="email">Email</label><span id="email_error" class="error"></span></div>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <input type="email" class="form-control" id="email" name="email"  placeholder="Enter your email" required>
               </div>
               <div class="form-group">
                 <div class="d-flex justify-content-between"><label for="message">Message</label><span id="message_error" class="error"></span></div>
-                <textarea class="form-control" id="message" rows="8" placeholder="Enter your message" required></textarea>
+                <textarea class="form-control" id="message" rows="8" name="message" placeholder="Enter your message" required></textarea>
               </div>
               <div class="mt-5 btn-container d-flex justify-content-center">
                 <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
@@ -419,7 +419,6 @@
       </div>
     </div>
   </section>
-
   <!-- Template Main JS File -->
   <script src="assets/Scripts/main.js"></script>
   <script src="assets/Scripts/slider.js"></script>
