@@ -37,4 +37,11 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
     else{
         message_error_ouput.textContent = "";
     }
+
+    if(valid){
+        alert("Thank you for your message!");
+    }
+    else{
+        event.preventDefault();
+    }
 });
