@@ -1,6 +1,6 @@
 "use strict";
-const leftArrow = document.querySelector(".left-arrow"),
-  rightArrow = document.querySelector(".right-arrow"),
+const leftArrow = document.getElementById("left-arrow"),
+  rightArrow = document.getElementById("right-arrow"),
   slider = document.querySelector(".slider"),
   slideCounter = document.getElementById("counter");
 
@@ -18,13 +18,15 @@ slideCounter.textContent = counter;
 leftArrow.addEventListener("click", scrollLeft);
 rightArrow.addEventListener("click", scrollRight);
 
+// Adding event listener for manual scroll
+slider.addEventListener("scroll", updateCounterOnScroll);
+
 /**
  * @brief Scroll to the right
  */
 function scrollRight() {
   // Get the index of the current slide
   const currentSlideIndex = Array.from(slides).findIndex(slide => slide.classList.contains(`slide${counter}`));
-
   // Scroll to the next slide if not at the end
   if (currentSlideIndex < totalSlides - 1) {
     const nextSlide = slides[currentSlideIndex + 1];
@@ -71,5 +73,25 @@ function scrollLeft() {
   }
 
   // Update slide counter
+  slideCounter.textContent = counter;
+}
+
+/**
+ * @brief Update slide counter when user scrolls manually
+ */
+function updateCounterOnScroll() {
+  // Find the slide that is mostly in view
+  let closestSlideIndex = 0;
+  let closestSlideDistance = Infinity;
+  slides.forEach((slide, index) => {
+    const distance = Math.abs(slide.getBoundingClientRect().left);
+    if (distance < closestSlideDistance) {
+      closestSlideIndex = index;
+      closestSlideDistance = distance;
+    }
+  });
+
+  // Update the counter to reflect the closest slide
+  counter = closestSlideIndex + 1;
   slideCounter.textContent = counter;
 }
