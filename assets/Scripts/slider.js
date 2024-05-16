@@ -12,7 +12,7 @@ const totalSlides = slides.length;
 
 // Initialize counter and update slide counter
 let counter = 1;
-slideCounter.innerHTML = counter;
+slideCounter.textContent = counter;
 
 // Adding event listeners to arrow buttons
 leftArrow.addEventListener("click", scrollLeft);
@@ -43,7 +43,7 @@ function scrollRight() {
   }
 
   // Update slide counter
-  slideCounter.innerHTML = counter;
+  slideCounter.textContent = counter;
 }
 
 /**
@@ -71,5 +71,5 @@ function scrollLeft() {
   }
 
   // Update slide counter
-  slideCounter.innerHTML = counter;
+  slideCounter.textContent = counter;
 }

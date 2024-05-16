@@ -450,6 +450,11 @@ section {
   box-shadow: 0px 0px 15px var(--color3); /* Glow effect */
 }
 
+.error{
+  color: var(--color3);
+  font-size: 15px;
+}
+
 /* Media Queries */
 @media (max-width: 1199px) {
   section {
