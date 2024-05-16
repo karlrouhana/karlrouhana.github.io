@@ -37,10 +37,4 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
     else{
         message_error_ouput.textContent = "";
     }
-
-    if (valid) {
-        window.location.href = "process_form.php";
-    } else {
-        event.preventDefault();
-    }
 });
